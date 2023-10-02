@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once './classes/Database.php';
-$db = new Database('localhost', 'menhely', 'root', '');
-$db->login(Lajos, Lajos);
+$db = new Database('localhost', 'root','','menhely');
+$db->login("Lajos", "Lajos");
 $_SESSION['username'] = 'Lajos';
 $_SESSION['password'] = 'Lajos';
 $_SESSION['login'] = false;
